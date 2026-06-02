@@ -1,0 +1,111 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(
+        135deg,
+        #d8f3dc,
+        #cfe8ff,
+        #f8c8dc
+    );
+}
+
+/* ===== FORM BOX ===== */
+form{
+    width: 350px;
+
+    padding: 35px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+
+    border: 1px solid rgba(255,255,255,0.3);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+/* ===== HEADING ===== */
+h3{
+    text-align: center;
+
+    color: white;
+
+    margin-bottom: 25px;
+
+    font-size: 32px;
+}
+
+/* ===== LABEL ===== */
+label{
+    color: white;
+
+    font-size: 16px;
+}
+
+/* ===== INPUT ===== */
+input{
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 8px;
+    margin-bottom: 18px;
+
+    border: none;
+
+    border-radius: 10px;
+
+    outline: none;
+
+    background: rgba(255,255,255,0.7);
+
+    font-size: 15px;
+}
+
+/* ===== BUTTON ===== */
+button{
+    width: 100%;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background: white;
+
+    color: #444;
+
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+/* ===== BUTTON HOVER ===== */
+button:hover{
+    transform: scale(1.03);
+
+    background: #f1f1f1;
+}

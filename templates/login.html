@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Login</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <h3>
+        User Login Page
+        </h3>
+        <form action="/login" method="POST">
+            <label>Username:</label>
+            <input type="text" name="username" required>
+            <br><br>
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Login</button>
+            <br>
+            <a href="/register">Create New Account</a>
+        </form>
+    </body>
+</html>

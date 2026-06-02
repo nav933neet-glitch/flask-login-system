@@ -1,0 +1,166 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* ===== RESET ===== */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== BODY ===== */
+body{
+    font-family: 'Poppins', sans-serif;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    background: linear-gradient(
+        135deg,
+        #d8f3dc,
+        #cfe8ff,
+        #f8c8dc,
+        #f5f5f5
+    );
+
+    overflow: hidden;
+
+    position: relative;
+}
+
+/* ===== GLOW EFFECT ===== */
+body::before{
+    content: "";
+
+    position: absolute;
+
+    width: 800px;
+    height: 800px;
+
+    background: radial-gradient(
+        circle,
+        rgba(255,192,203,0.6),
+        rgba(173,216,230,0.4),
+        rgba(144,238,144,0.3),
+        transparent
+    );
+
+    top: -200px;
+    right: -150px;
+
+    border-radius: 50%;
+
+    filter: blur(70px);
+}
+
+/* ===== HEADING ===== */
+h3{
+    color: white;
+
+    font-size: 40px;
+    font-weight: 700;
+
+    margin-bottom: 30px;
+
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== FORM ===== */
+form{
+    width: 350px;
+
+    padding: 40px;
+
+    background: rgba(255,255,255,0.15);
+
+    backdrop-filter: blur(15px);
+
+    border: 2px solid rgba(255,255,255,0.3);
+
+    border-radius: 25px;
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== LABEL ===== */
+label{
+    color: white;
+
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* ===== INPUT ===== */
+input{
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 10px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    outline: none;
+
+    font-size: 16px;
+
+    background: rgba(255,255,255,0.7);
+}
+
+/* ===== BUTTON ===== */
+button{
+    width: 100%;
+
+    padding: 14px;
+
+    margin-top: 25px;
+
+    border: 2px solid white;
+
+    border-radius: 40px;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.4s;
+}
+
+/* ===== BUTTON HOVER ===== */
+button:hover{
+    background: white;
+
+    color: #444;
+}
+
+a{
+    display: block;
+
+    text-align: center;
+
+    margin-top: 20px;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 16px;
+}
+a:hover{
+    text-decoration: underline;
+}

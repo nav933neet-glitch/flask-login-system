@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Regiter Page</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='register_style.css') }}">
+    </head>
+    <body>
+        <form action="/register_user" method="POST">
+            <h3>Create Account</h3>
+            <label>Username:</label>
+            <input type="text" name="username" required>
+            
+            <label>Email:</label>
+            <input type="email" name="email" required>
+            
+            <label>Password:</label>
+            <input type="password" name="password" required>
+            <button type="submit">Register</button>
+        </form>
+    </body>
+</html>
